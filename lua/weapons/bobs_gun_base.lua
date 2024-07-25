@@ -73,6 +73,7 @@
 	PrimaryAttack		> PrimaryAttackHooked
 
 
+	SWEP.PostPrimaryAttack -- Can be set to a function that will be called after the PrimaryAttack function finished completely. Client and Server realms.
 	SWEP.PostReloadCall - Can be set to a function that will be called when the reload finished. (Serverside only) - Only works in combination with dynamic reload. - An example can be found in m9k_minigun.lua
 
 
@@ -612,6 +613,11 @@ if SERVER then
 		local aRecoil = Angle(math.random(-KickDown,-KickUp),math.random(-KickHorizontal,KickHorizontal),0)
 
 		self.Owner:ViewPunch(aRecoil)
+
+
+		if self.PostPrimaryAttack then
+			self:PostPrimaryAttack()
+		end
 
 	end
 

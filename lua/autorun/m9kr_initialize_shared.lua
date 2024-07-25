@@ -24,26 +24,26 @@ hook.Add("PreGamemodeLoaded",sTag,function()
 |  )    ( \_  / )  (      )   / )__)  )    (  /(__)\ \__ \  )(   )__)  )   / )__)  )(_) )
 | (_/\/\_) (_/ (_)\_)()  (_)\_)(____)(_/\/\_)(__)(__)(___/ (__) (____)(_)\_)(____)(____/ 
 |
-|__ Made with love. -MeteorTheLizard.
+|__ Made with love.. https://meteorthelizard.com/
 |
 |
 |__ All ConVars below are Serverside and dictate the behavior on the clients.
 |
 |__ RP Servers >> We recommend setting m9k_balancemode to 1 and both m9k_spawn_with_ammo, m9k_spawn_with_reserve to 0.
 |
-|__ m9k_balancemode		Disable/Enable Remastered Balance.	0 = Legacy | 1 = Remastered
+|__ m9k_balancemode		"Remastered balance"		0 = Legacy		1 = Remastered
 |
-|__ m9k_spawn_with_ammo		Disable/Enable Ammo in Magazine.	0 = No Ammo | 1 = Full Magazine on Equip
+|__ m9k_spawn_with_ammo		"Ammo in magazine"		0 = No ammo		1 = Full magazine on equip
 ]])
 
 	-- This has to be split up into two parts for srcds to print it properly.
 	MsgC(Color(255,128,128),[[
 |
-|__ m9k_spawn_with_reserve	Disable/Enable Giving Ammo on pickup.	0 = No Ammo | 1 = 3 Magazines on Equip
+|__ m9k_spawn_with_reserve	"Giving ammo on pickup"		0 = No ammo		1 = 3 Magazines on equip
 |
-|__ m9k_zoomstages		Disable/Enable Zoomstages on weapons.	0 = One zoom level | 1 = Multiple zoom levels
+|__ m9k_zoomstages		"Zoom-stages on weapons"	0 = One zoom level	1 = Multiple zoom levels
 |
-|__ m9k_zoomtoggle		Disable/Enable Zoomtoogle on weapons.	0 = Hold to zoom | 1 = Toggle to zoom/unzoom
+|__ m9k_zoomtoggle		"Zoom-toggle on weapons"	0 = Hold to zoom	1 = Toggle to zoom/un-zoom
 |
 
 ]])
@@ -63,12 +63,12 @@ hook.Add("PreGamemodeLoaded",sTag,function()
 |  )    ( \_  / )  (      )   / )__)  )    (  /(__)\ \__ \  )(   )__)  )   / )__)  )(_) )
 | (_/\/\_) (_/ (_)\_)()  (_)\_)(____)(_/\/\_)(__)(__)(___/ (__) (____)(_)\_)(____)(____/ 
 |
-|__ Made with love. -MeteorTheLizard.
+|__ Made with love.. https://meteorthelizard.com/
 |
 |
 |__ Console Commands:
 |
-|__ m9k_lefthanded		Disable/Enable lefthanded weapons.	0 = Right-handed | 1 = Left-handed
+|__ m9k_lefthanded		"Left-handed weapons"		0 = Right-handed	1 = Left-handed
 |
 
 ]])
