@@ -18,6 +18,13 @@ This addon includes all original base packs:
 This addon can be used exclusively for the resources:
 
 - Models, materials, sounds, etc..
+<br>
+
+**watchVTFOptimizer applied!**
+
+This is an in-house tool that reduces content size with no visible quality loss.
+
+**262 MB -> 260 MB** of material data.
 
 # Compatibility
 
