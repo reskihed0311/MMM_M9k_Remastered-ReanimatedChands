@@ -98,7 +98,7 @@ if SERVER then
 			util.BlastDamage(self,self.Owner,vPos,350,100)
 
 
-			self:EmitSound("ambient/explosions/explode_" .. math.random(4) .. ".wav",100)
+			--self:EmitSound("ambient/explosions/explode_" .. math.random(4) .. ".wav",100)
 
 
 			self:Remove()
@@ -143,13 +143,16 @@ if SERVER then
 		end
 
 
-		if self.iNextSound < CurTime() and obj_Data.Speed > 100 and obj_Data.DeltaTime > 0.1 then
+		local obj_Phys = self:GetPhysicsObject()
 
-			self:EmitSound("weapons/hegrenade/he_bounce-1.wav")
-
-			self.iNextSound = CurTime() + 0.1
-
+		if IsValid(obj_Phys) then
+			obj_Phys:EnableMotion(false)
 		end
+
+		self.StartTouch = nil -- We be sticking.
+
+		self:EmitSound("weapons/hegrenade/he_bounce-1.wav")
+
 	end
 
 
