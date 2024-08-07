@@ -933,6 +933,7 @@ if CLIENT then
 
 				if not eWep.tDrawSoundSequence then
 
+					util.PrecacheSound(eWep.DrawSound) -- Fixes one-time issues
 					eWep.Owner:EmitSound(eWep.DrawSound,65)
 
 				else
@@ -965,6 +966,7 @@ if CLIENT then
 								if iPassed > v.iDelay then
 
 
+									util.PrecacheSound(v.sSound) -- Fixes one-time issues
 									eWep.Owner:EmitSound(v.sSound,v.iVolume or 70,math.random(95,105),1,CHAN_ITEM) -- Random pitch = Better
 
 
@@ -1433,7 +1435,7 @@ if CLIENT then
 
 						if iPassed > v.iDelay then
 
-
+							util.PrecacheSound(v.sSound) -- Fixes one-time issues
 							self.Owner:EmitSound(v.sSound,v.iVolume or 70,math.random(95,105),1,CHAN_ITEM) -- Random pitch = Better
 
 
